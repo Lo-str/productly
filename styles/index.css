@@ -1,0 +1,576 @@
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+body {
+    border: 5px solid rgb(255, 0, 0);
+    margin: 0;
+    background-color: #ffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 26px;
+}
+
+.full-wrap {
+    border: 5px solid rgb(116, 59, 12);
+    margin: 20px;
+    max-width: 1126px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* === Header ===  */
+/* figma #01 navigation/rectangle  */
+header {
+    border: 5px solid rgb(190, 129, 8);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1126px;
+    width: 100%;
+    min-height: 78px;
+}
+
+/* Logo */
+.logo {
+    border: 5px solid #FFDD00 ;
+    width: 185px;
+    height: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo__img {
+    border: 5px solid rgb(238, 255, 0);
+    width: 31px;
+    height: 32px;
+    border-radius: 7px;
+    margin-right: 12px;
+}
+
+.logo__txt {
+    border: 5px solid rgb(238, 255, 0);
+    width: auto;
+    height: 31px;
+}
+
+/* Navbar */
+.header__navbar {
+    border: 5px solid rgb(132, 0, 255);
+    /* max-width: 650px;
+    width: 100%;
+    min-height: 28px; */
+    display: flex;
+    flex: 1 1 350px;
+    max-width: 698px;
+    min-height: 28px;
+    justify-content: flex-end;
+}
+
+.header__list {
+    border: 5px solid rgb(255, 0, 157);
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header__item {
+    border: 5px solid rgb(255, 0, 157);
+    display: flex;
+    justify-content: center;
+}
+
+.header__link {
+    border: 5px solid rgb(255, 0, 157);
+    
+}
+
+/* Button */
+.actions {
+    border: 5px solid rgb(0, 115, 255);
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-left: 15px
+}
+
+.btn {
+    width: 102px;
+    height: 46px;
+    border-radius: 4px;
+    border-color: transparent;
+    transition: transform 0.2s;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn--signIn {
+    border: 5px solid rgb(0, 0, 255);
+    background-color: transparent;
+    border: transparent    
+}
+.btn.btn--signUp {
+    border: 5px solid rgb(0, 0, 255);
+    background-color: #FF9900;
+    color:#FFFFFF;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* === Section 1 === */
+/* figma #02 header */
+.block-one {
+    border: 5px solid rgb(190, 129, 8);
+    display: flex;
+    max-width: 1126px;
+    width: 100%;
+    min-height: 496px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* figma #02 left side */
+.block-one__content {
+    border: 5px solid rgb(255, 221, 0);
+}
+
+/* <!-- figma #02 text --> */
+.main-title.main-title--block-two{
+    border: 5px solid rgb(132, 0, 255);
+    max-width: 518px;
+    width: 100%;
+    min-height: 108px;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    color: #2F281E;
+}
+
+.block-one__text {
+    max-width: 458px;
+    width: 100%;
+    min-height: 95px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #544837;
+}
+
+.btns {
+    max-width: 366px;
+    width: 100%;
+    min-height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.btn.btn--started {
+    border: 5px solid rgb(0, 0, 255);
+    background-color: #FF9900;
+    color: #FFFFFF;
+    width: 175px;
+    height: 53px;
+    margin-right: 15px;
+}
+
+.block-one__triangle {
+    width: 20px;
+    height: 17px;
+    margin: 0 3px 0 15px;
+}
+
+.btn.btn--video {
+    border: 5px solid rgb(0, 0, 255);
+    background-color: transparent;
+    color: #FF9900;
+    width: 135px;
+    height: 24px;
+}
+
+/* Image */
+.block-one__img {
+    border: 5px solid rgb(255, 0, 157);
+    max-width: 605px;
+    width: 100%;
+    min-height: 496px ;
+} 
+
+/* === Section 2 === */
+/* figma #03 / Feature */
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2F281E;
+    margin: 0;
+}
+
+.block-two {
+    border: 5px solid rgb(255, 136, 0);
+    max-width: 1126px;
+    width: 100%;
+    min-height: 543px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    
+}
+
+.main-title.main-title--block-two {
+    border: 5px solid rgb(132, 0, 255);
+    max-width: 600px;
+    width: 100%;
+    min-height: 108px;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+/* Cards */
+.h3-title {
+    font-weight: 600;
+    font-size: 22px;
+    color: #2F281E;
+    margin: 0;
+}
+
+.block-two__cards {
+    border: 5px solid rgb(190, 129, 8);
+    max-width: 1142px;
+    width: 100%;
+    min-height: 204px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.card {
+    max-width: 240px;
+    width: 100%;
+    min-height: 178px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card__icon {
+    border: 2px solid #52be57;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    border: transparent;
+    border-radius: 19px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__text {
+    max-width: 240px;
+    width: 100%;
+    min-height: 98px;
+    margin: 0;
+}
+/* Card 1 */
+/* figma #03 card/1 */
+.card__icon.card--left {
+    border: 5px solid #7752BE;
+}
+
+.card__img {
+    width: 18px;
+    height: auto;
+}
+
+.card__icon.card__icon--purple {
+    background-color: #7752BE;
+    box-shadow: 0 10px 20px #7752BE;
+}
+
+/* Card 2 */
+/* figma #03 card/3 */
+.card.card--center-a {
+    border: 5px solid #FAB005;
+}
+
+.card__img {
+    width: 18px;
+    height: auto;
+}
+
+.card__icon.card__icon--gold {
+    background-color: #FAB005;
+    box-shadow: 0 10px 20px #FAB005;
+
+}
+
+/* Card 3 */
+/* figma #03 card/4 */
+.card.card--center-b {
+    border: 5px solid #F03E3D;
+}
+
+.card__img {
+    width: 16px;
+    height: auto;
+}
+
+.card__icon.card__icon--red {
+    background-color: #F03E3D;
+    box-shadow: 0 10px 20px #F03E3D;
+}
+
+/* Card 4  */
+/* figma #03 card/4 */
+.card.card--right {
+    border: 5px solid #4DADF7;
+}
+
+.card__img {
+    width: 14px;
+    height: auto;
+}
+
+.card__icon.card__icon--blue {
+    background-color: #4DADF7;
+    box-shadow: 0 10px 20px #4DADF7;
+}
+
+/* Button */
+.btn.btn--now {
+    width: 175px;
+    height: 53px;
+    background-color: #FF9900;
+    color: #FFFFFF;    
+}
+
+/* === Section 3 === */
+/* figma #04 effortless validation */
+.block-three {
+    border: 5px solid rgb(66, 190, 8);
+    max-width: 1110px;
+    width: 100%;
+    min-height: 574px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 104px;
+}
+
+.block-three__content {
+    border: 5px solid rgb(190, 129, 8);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 3px;
+}
+
+.block-three__layout {
+    border: 5px solid rgb(66, 190, 8);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.block-three__text {
+    border: 5px solid #ffdd00;
+    max-width: 486px;
+    width: 100%;
+    min-height: auto;
+    line-height: 26px;
+}
+
+.h4-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color:#2F281E;
+    margin: 0;
+}
+
+.h4-title--block--three {
+    padding-top: 10px;
+}
+
+.main-title.main-title--block-three {
+    border: 5px solid #8400FF;
+}
+
+/* Card 1 */
+/* figma #04 / #03 */
+.block-three__text {
+    border: 5px solid #ffdd00;
+    margin: 0;
+}
+
+.block-three__text.block-three__text-a {
+   line-height: auto; 
+}
+
+.block-three__layout.block-three__layout--top {
+    border: 5px solid #ffdd00;
+}
+
+/* Card 2 */
+/* figma #04 / #02 */
+.block-three__layout.block-three__layout--center {
+    border: 5px solid #F03E3D;
+}
+
+.block-three__layout.block-three__layout--btm {
+    border: 5px solid #4DADF7;
+}
+
+/* figma #04 / image */
+.block-three__img {
+    border: 5px solid  #FF009D;
+    max-width: 520px;
+    width: 100%;
+    min-height: 574px;
+}
+
+/* === Section 4 === */
+/* figma #05 product managers */
+.block-four {
+    border: 5px solid rgb(66, 190, 8);
+    max-width: 1121px;
+    width: 100%;
+    min-height: 521px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 104px;
+}
+
+.block-four.block-four__img {
+    border: 5px solid  #FF009D;
+    max-width: 533px;
+    width: 100%;
+    min-height: 520px;
+}
+/* figma #05 / text */
+.block-four.block-four__content {
+    border: 5px solid rgb(190, 129, 8);
+    display: flex;
+    flex-direction: column;
+}
+
+.block-four.block-four__text {
+    border: 5px solid #ffdd00;
+    max-width: 486px;
+    width: 100%;
+    min-height: auto;
+}
+
+/* .main-title.main-title--block-three {} */
+
+/* .block-four.block-four__layout {
+    border: 5px solid rgb(66, 190, 8);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+} */
+
+.block-four.block-four__tick-box {
+    width: 35px;
+    height: 35px;
+    background-color: #FF9900;
+    border-radius: 19px;
+    border-color: transparent;
+}
+
+.block-four.block-four__tick-box--img {
+    width: 16px;
+    height: 12px;
+}
+
+.block-four__layout.block-four__layout--a {
+    display: flex;
+}
+/* === Section 5 === */
+/* figma #06 / marketers */
+block-five
+block-five__content
+block-five__text
+block-five__title
+block-five__text
+
+/* Card 1 */
+/* figma #06 / #01 */
+card card--layout-a
+card__title card__title--top
+card__text
+ 
+/* Card 2 */
+/* figma #06 / #02 */
+card card--layout-b
+card__title card__title--top
+card__text
+
+/* Card 3  */
+/* figma #06 / #03 */
+card card--layout-c
+card__title card__title--btm
+card__text
+
+/* Image */
+block-five__img
+
+/* === Footer === */
+/* figma #09 / footer */
+footer
+
+/* Block logo */
+logo
+logo__img
+logo__txt
+
+/* Sign up panel */
+/* figma #09 / #03 */
+card card--right
+btn btn--now
+
+/* Legal links */
+/* figma #09 / legal stuff */
+footer__nav footer__nav--legal
+footer__list
+footer__item    /* 4 items*/
+footer__link    /* 4 links*/
+
+/* Quick links */
+/* figma #09 / quick links */
+footer__nav footer__nav--social
+footer__list
+footer__item    /* 4 items*/
+footer__link    /* 4 links*/

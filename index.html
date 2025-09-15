@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productly</title>
+
+    <!-- Normalize and stylesheet links -->
+    <link rel="stylesheet" href="normalize-code.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="full-wrap">
+
+        <!-- === Header === -->
+        <!-- figma #01 navigation/rectangle -->
+        <header class="header">
+
+            <!-- Logo -->
+            <div class="logo">
+                <img class="logo__img" src="images/logo.png" alt="Productly Logo mark">
+                <img class="logo__txt" src="images/productly.png" alt="Productly wordmark">
+            </div>
+            
+            <!-- Navbar -->
+            <nav class="header__navbar" aria-label="header links">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" 
+                    href="#">Product</a></li>
+                    <li class="header__item"><a class="header__link" 
+                    href="#">Customers</a></li>
+                    <li class="header__item"><a class="header__link" 
+                    href="#">Pricing</a></li>
+                    <li class="header__item"><a class="header__link" 
+                    href="#">Resources</a></li>    
+                </ul>
+            </nav>
+
+            <!-- Button -->
+            <div class="actions">
+                <button class="btn btn--signIn">Sign In</button>
+                <button class="btn btn--signUp">Sign Up</button>
+            </div>
+        </header>
+
+        <!-- figma #01 productly -->
+        <main class="main-content">
+
+            <!-- === Section 1 === -->
+            <!-- figma #02 header -->
+            <section class="block-one">
+                
+                <!-- figma #02 left side -->
+                <div class="block-one__content">
+                    <!-- figma #02 text -->
+                    <h1 class="main-title main-title--block-one">The Design Thinking superpowers</h1>
+                    <p class="block-one__text">
+                        Tools, tutorials, design and innovation experts, all
+                        in one place! The most intuitive way to imagine
+                        your next user experience.
+                    </p>
+                    <div class="btns">
+                        <button class="btn btn--started">Get started</button>
+                        <img class="block-one__triangle" src="images/icon-video.png" alt="">
+                        <button class="btn btn--video" href="#">Watch the video</button>
+                    </div>
+                </div>
+                <img class="block-one__img" src="images/img-block-one.png" alt="" aria-hidden="true">
+                
+            </section>
+            
+            <!-- === Section 2 === -->
+            <!-- figma #03 / Feature -->
+            <section class="block-two">
+                <h2 class="main-title main-title--block-two">We design tools to unveil your superpowers</h2>
+
+                <!-- Cards layout -->
+                <!-- figma #03 / cards-->
+                 <div class="block-two__cards">
+                    <!-- Card 1 -->
+                    <!-- figma #03 / #4 -->
+                    <div class="card card--left">
+                        <div class="card__icon card__icon--purple"> 
+                            <img class="card__icon card__icon--img" src="images/icon-purple.png" alt="">
+                        </div>
+                        <h3 class="h3-title">
+                            First click tests
+                        </h3>
+                        <p class="card__text card__text--left">
+                            While most people enjoy
+                            casino gambling,
+                        </p>
+                    </div>
+                
+                    <!-- Card 2 -->
+                    <!-- figma #03 / #3 -->
+                    <div class="card card--center-a">
+                        <div class="card__icon card__icon--gold"> 
+                            <img class="card__img" src="images/icon-gold.png" alt="">
+                        </div>
+                        <h3 class="h3-title">Design surveys</h3>
+                        <p class="card__text card__text--center-a">
+                            Sports betting, lottery and
+                            bingo playing for the fun
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <!-- figma #03 / #2 -->
+                    <div class="card card--center-b">
+                        <div class="card__icon card__icon--red"> 
+                            <img class="card__img" src="images/icon-red.png" alt="">
+                        </div>
+                        <h3 class="h3-title">Preference tests</h3>
+                        <p class="card__text card__text--center-b">
+                            The Myspace page defines
+                                the individual.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <!-- figma #03 / #1 -->
+                    <div class="card card--right">
+                        <div class="card__icon card__icon--blue"> 
+                            <img class="card__img" src="images/icon-blue.png" alt="">
+                        </div>
+                        <h3 class="h3-title">Five second tests</h3>
+                        <p class="card__text card__text--right">
+                            Personal choices and the<br>
+                            overall personality of the<br>
+                            person.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="btn btn--now">SIGN UP NOW</button>
+            </section>
+
+            <!-- === Section 3 === -->
+            <!-- figma #04 effortless validation -->
+            <section class="block-three">
+                <article class="block-three__content">
+                    <p class="block-three__text">Effortless Validation for</p>
+                    <h2 class="main-title main-title--block-three">Design Professionals</h2>
+                    <div class="block-three__layout">
+                        <p class="block-three__text block-three__text-a">
+                            The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.
+                        </p>
+
+                        <h4 class="h4-title h4-title--block-three">Accessory makers</h4>
+                        <p class="block-three__text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+
+                        <h4 class="h4-title h4-title--block-three">Alterationists</h4>
+                        <p class="block-three__text">If you are looking for a new way to promote your business that won’t cost you more money, </p>
+
+                        <h4 class="h4-title h4-title--block-three">Custom Design designers</h4>
+                        <p class="block-three__text">If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                    </div>
+                </article>
+
+                    <!-- figma #04 / image -->
+                    <img class="block-three__img" src="images/img-block-three.png" alt="" aria-hidden="true">
+            </section>
+
+            <!-- === Section 4 === -->
+            <!-- figma #05 product managers -->
+            <section class="block-four">
+                <img class="block-four block-four__img" src="images/img-block-four.png" alt="" aria-hidden="true">
+
+                <!-- figma #05 / text -->
+                <article class="block-four block-four__content">
+                    <p class="block-four block-four__text">Easier decision making for</p>
+                    <h2 class="main-title main-title--block-four">Product Managers</h2>
+                    <div class="block-four__layout">
+                        <p class="block-four block-four__text">
+                            The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person.
+                        </p>
+                    
+
+                        <!-- Card 1  -->
+                        <!-- figma #05 / #03 -->
+                        <div class="block-four__layout block-four__layout--a">
+                            <div class="block-four block-four__tick-box">
+                                <img class="block-four__tick-box--img" src="images/tick-box.png" alt="Yellow tick box">
+                            </div>
+                            <p class="block-four block-four__text">We will only switch you to energy companies that we trust and will treat you right</p>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <!-- figma #05 / #01 -->
+                        <div class="block-four__layout block-four__layout--b">
+                            <img class="block-four__tick-box block-four__tick-box--img" src="images/tick-box.png" alt="Yellow tick box">
+                            <p class="block-four block-four__text">We track the markets daily and know where the savings are.</p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <!-- figma #05 / #02 -->
+                        <div class="block-four__layout block-four__layout--c">
+                            <img class="block-four__tick-box block-four__tick-box--img" src="images/tick-box.png" alt="Yellow tick box">
+                            <p class="block-four block-four__text">Never worry about overpaying for your energy again. </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- === Section 5 === -->
+
+            <!-- figma #06 / marketers -->
+            <section class="block-five">
+                <article class="block-five__content">
+                    <p class="block-five__text">Optimisation for</p>
+                    <h2 class="block-five__title">Marketers</h2>
+                    <p class="block-five__text">
+                        Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. 
+                    </p>
+                
+
+                    <!-- Card 1 -->
+                    <!-- figma #06 / #01 -->
+                    <div class="card card--layout-a">
+                        <h4 class="card__title card__title--top">Accessory makers</h4>
+                        <p class="card__text">
+                        While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <!-- figma #06 / #02 -->
+                    <div class="card card--layout-b">
+                        <h4 class="card__title card__title--top">Alterationists</h4>
+                        <p class="card__text">
+                            If you are looking for a new way to promote your business that won’t cost you more money, 
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <!-- figma #06 / #03 -->
+                    <div class="card card--layout-c">
+                        <h4 class="card__title card__title--btm">Custom Design designers</h4>
+                        <p class="card__text">
+                            If you are looking for a new way to promote your business that won’t cost you more money, 
+                        </p>
+                    </div>
+                </article>
+
+                <img class="block-five__img" src="#" alt="" aria-hidden="true">
+            </section>
+        </main>
+
+        <!-- === Footer === -->
+        <!-- figma #09 / footer -->
+        <footer class="footer">
+
+            <!-- Block logo -->
+            <div class="logo">
+                <img class="logo__img" src="images/Logo.png" alt="Productly Logo mark">
+                <img class="logo__txt" src="images/Productly.png" alt="Productly wordmark">
+            </div>
+
+            <!-- Sign up panel -->
+            <!-- figma #09 / #03 -->
+            <div class="card card--right">
+                <!-- <h5 class="card__quote">knowing you're always on the best energy deal.</h5>
+                <p class="card__text card__text--phone"></p>
+                <div class="card__form"></div> -->
+                <button class="btn btn--now">Sign up Now</button>
+            </div>
+
+            <!-- Legal links -->
+            <!-- figma #09 / legal stuff  -->
+            <nav class="footer__nav footer__nav--legal" aria-label="legal links">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">Disclaimer</a></li>
+                    <li class="footer__item"><a class="footer__link" 
+                    href="#">Financing</a></li>
+                    <li class="footer__item"><a class="footer__link"
+                    href="#">Privacy Policy</a></li>
+                    <li class="footer__item"><a class="footer__link"
+                    href="#">Terms of Service</a></li>
+                </ul>
+                </nav>
+
+            <!-- Quick links -->
+            <!-- figma #09 / quick links -->
+            <nav class="footer__nav footer__nav--social" aria-label="quicklinks">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link"
+                    href="#">About Us</a></li>
+                    <li class="footer__item"><a class="footer__link"
+                    href="#">Blog</a></li>
+                    <li class="footer__item"><a class="footer__link"
+                    href="#">Contact</a></li>
+                    <li class="footer__item"><a class="footer__link"
+                    href="#">FAQ</a></li>
+                </ul>
+            </nav>        
+        </footer>
+    </div>
+</body>
+</html>
