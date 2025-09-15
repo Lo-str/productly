@@ -425,6 +425,10 @@ header {
 
 .main-title.main-title--block-three {
     border: 5px solid #8400FF;
+    padding-bottom: 20px;
+    max-width: 400px;
+    width: 100%;
+    min-height: 54px;
 }
 
 /* Card 1 */
@@ -466,34 +470,51 @@ header {
     border: 5px solid rgb(66, 190, 8);
     max-width: 1121px;
     width: 100%;
-    min-height: 521px; 
+    /* min-height: 521px;  */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 104px;
 }
 
-.block-four.block-four__img {
+.block-four__img {
     border: 5px solid  #FF009D;
     max-width: 533px;
     width: 100%;
     min-height: 520px;
 }
 /* figma #05 / text */
-.block-four.block-four__content {
+.block-four__content {
     border: 5px solid rgb(190, 129, 8);
     display: flex;
     flex-direction: column;
+    align-items: baseline;
+    gap: 3px;
 }
 
-.block-four.block-four__text {
+.block-four__text {
     border: 5px solid #ffdd00;
-    max-width: 486px;
+    max-width: 375px;
     width: 100%;
     min-height: auto;
+    margin: 0;
 }
 
-/* .main-title.main-title--block-three {} */
+.block-four__layout {
+    border: 5px solid #ff0d00;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-title.main-title--block-four {
+    border: 5px solid #6a00ff;
+    max-width: 400px;
+    width: 100%;
+    min-height: 54px;
+    padding-bottom: 20px;
+}
 
 /* .block-four.block-four__layout {
     border: 5px solid rgb(66, 190, 8);
@@ -506,8 +527,10 @@ header {
     width: 35px;
     height: 35px;
     background-color: #FF9900;
-    border-radius: 19px;
+    border-radius: 12px;
     border-color: transparent;
+    display: flex;
+    justify-content: center;
 }
 
 .block-four.block-four__tick-box--img {
@@ -515,62 +538,128 @@ header {
     height: 12px;
 }
 
-.block-four__layout.block-four__layout--a {
-    display: flex;
-}
+
 /* === Section 5 === */
 /* figma #06 / marketers */
-block-five
-block-five__content
-block-five__text
-block-five__title
-block-five__text
+.block-five {
+    border: 5px solid rgb(66, 190, 8);
+    max-width: 1110px;
+    width: 100%;
+    min-height: 574px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 104px;
+}
+
+.block-five__content {
+    border: 5px solid rgb(190, 129, 8);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 3px;
+}
+
+.block-five__layout {
+    border: 5px solid rgb(66, 190, 8);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.block-five__text {
+    border: 5px solid #ffdd00;
+    max-width: 486px;
+    width: 100%;
+    min-height: auto;
+    line-height: 26px;
+}
+
+.h4-title--block--five{
+    padding-top: 10px;
+}
+
+.main-title.main-title--block-five {
+    border: 5px solid #8400FF;
+    padding-bottom: 20px;
+    max-width: 400px;
+    width: 100%;
+    min-height: 54px;
+}
 
 /* Card 1 */
-/* figma #06 / #01 */
-card card--layout-a
-card__title card__title--top
-card__text
- 
+/* figma #04 / #03 */
+.block-five__text {
+    border: 5px solid #ffdd00;
+    margin: 0;
+}
+
+.block-five__text.block-five__text-a {
+   line-height: auto; 
+}
+
+.block-five__layout.block-five__layout--top {
+    border: 5px solid #ffdd00;
+}
+
 /* Card 2 */
-/* figma #06 / #02 */
-card card--layout-b
-card__title card__title--top
-card__text
+/* figma #04 / #02 */
+.block-five__layout.block-five__layout--center {
+    border: 5px solid #F03E3D;
+}
 
-/* Card 3  */
-/* figma #06 / #03 */
-card card--layout-c
-card__title card__title--btm
-card__text
+.block-five__layout.block-five__layout--btm {
+    border: 5px solid #4DADF7;
+}
 
-/* Image */
-block-five__img
+/* figma #04 / image */
+.block-five__img {
+    border: 5px solid  #FF009D;
+    max-width: 520px;
+    width: 100%;
+    min-height: 574px;
+}
 
 /* === Footer === */
 /* figma #09 / footer */
-footer
+footer {
+    max-width: 1109px;
+    width: 100%;
+    min-height: 308px;
+    display: flex;
+}
 
 /* Block logo */
-logo
-logo__img
-logo__txt
+.logo {
+    border: 5px solid  #FF009D;
+}
 
 /* Sign up panel */
 /* figma #09 / #03 */
-card card--right
-btn btn--now
+.footer__input {}
+
+.btn.btn--now {
+    width: 131px;
+    height: 39px;
+}
+
+.footer__nav.footer__nav--social {
+    border: 5px solid  #FF009D;
+    width: 118px;
+    height: 200px;
+}
+
+.footer__nav.footer__nav--legal {
+    border: 5px solid  #FF009D;
+    width: 131px;
+    height: 200px;
+}
 
 /* Legal links */
 /* figma #09 / legal stuff */
-footer__nav footer__nav--legal
-footer__list
-footer__item    /* 4 items*/
-footer__link    /* 4 links*/
 
-/* Quick links */
-/* figma #09 / quick links */
-footer__nav footer__nav--social
-footer__list
-footer__item    /* 4 items*/
-footer__link    /* 4 links*/
+.footer__list {
+    list-style: none;
+    font-size: 16px;
+    line-height: 35px;
+}
