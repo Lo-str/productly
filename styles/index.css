@@ -44,6 +44,13 @@ body {
     gap: 100px;
 }
 
+.block-one__img,
+.block-three__img,
+.block-four__img,
+.block-five__img {
+  transition: opacity 0.3s ease;
+}
+
 /* === Header ===  */
 header {
     max-width: 1126px;
@@ -127,7 +134,7 @@ header {
 
 .btn.btn--signIn {
     background-color: transparent;
-    border: transparent    
+    border: none; 
 }
 .btn.btn--signUp {
     background-color: #FF9900;
@@ -142,10 +149,10 @@ header {
 
 /* === Section 1 === */
 .block-one {
-    display: flex;
     max-width: 1126px;
     width: 100%;
     min-height: 496px;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
@@ -211,7 +218,6 @@ header {
 .block-one__img {
     width: clamp(0px, 60vw - 250px, 605px);
     height: auto;
-    transition: opacity 0.3 s ease;
     display: block;
 } 
 
@@ -236,7 +242,7 @@ header {
 }
 
 .main-title.main-title--block-two {
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
     min-height: 108px;
     margin: 0;
@@ -299,29 +305,14 @@ header {
     box-shadow: 0 10px 20px #7752BE;
 }
 
-.card__img {
-    width: 18px;
-    height: auto;
-}
-
 .card__icon.card__icon--gold {
     background-color: #FAB005;
     box-shadow: 0 10px 20px #FAB005;
 }
 
-.card__img {
-    width: 16px;
-    height: auto;
-}
-
 .card__icon.card__icon--red {
     background-color: #F03E3D;
     box-shadow: 0 10px 20px #F03E3D;
-}
-
-.card__img {
-    width: 14px;
-    height: auto;
 }
 
 .card__icon.card__icon--blue {
@@ -378,7 +369,7 @@ header {
     margin: 0;
 }
 
-.h4-title--block--three {
+.h4-title--block-three {
     padding-top: 10px;
 }
 
@@ -396,7 +387,6 @@ header {
 .block-three__img {
     width: clamp(0px, 60vw - 250px, 520px);
     height: auto;
-    transition: opacity 0.4 s ease;
     display: block;
 }
 
@@ -414,7 +404,6 @@ header {
 .block-four__img {
     width: clamp(0px, 60vw - 250px, 532px);
     height: auto;
-    transition: opacity 0.4 s ease;
     display: block;
 }
 
@@ -510,7 +499,7 @@ header {
     line-height: 26px;
 }
 
-.h4-title--block--five{
+.h4-title--block-five{
     padding-top: 10px;
 }
 
@@ -532,7 +521,6 @@ header {
 .block-five__img {
     width: clamp(0px, 60vw - 250px, 542px);
     height: auto;
-    transition: opacity 0.4 s ease;
     display: block;
 }
 
@@ -542,7 +530,7 @@ footer {
     width: 100%;
     min-height: 308px;
     display: flex;
-    align-items: last baseline;
+    align-items: flex-end;
 }
 
 .logo {
@@ -559,7 +547,7 @@ footer {
     min-height: 180px;
     display: flex;
     justify-content: space-around;
-    align-items: last baseline;
+    align-items: flex-end;
 }
 
 .signup {
@@ -569,7 +557,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: last baseline;
+    align-items: flex-end;
     gap: 21px;
 }
 
