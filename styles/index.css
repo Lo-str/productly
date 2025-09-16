@@ -6,59 +6,65 @@
 a {
     color: inherit;
     text-decoration: none;
-    transition: transform 0.2s;
+    color: #2F281E;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
+a:hover {
+    text-decoration: underline;
+  }  
+
 img {
-    max-width: 100%;
     display: block;
     height: auto;
 }
 
 body {
-    border: 5px solid rgb(255, 0, 0);
-    margin: 0;
+    margin: 20px;
+    padding: 20px;
     background-color: #ffff;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     line-height: 26px;
+    color: #544837;
+    height: 100%;
 }
 
 .full-wrap {
-    border: 5px solid rgb(116, 59, 12);
-    margin: 20px;
+    margin: 20px auto;
     max-width: 1126px;
     width: 100%;
-    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 /* === Header ===  */
-/* figma #01 navigation/rectangle  */
 header {
-    border: 5px solid rgb(190, 129, 8);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     max-width: 1126px;
     width: 100%;
     min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
-/* Logo */
 .logo {
-    border: 5px solid #FFDD00 ;
     width: 185px;
     height: 32px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .logo__img {
-    border: 5px solid rgb(238, 255, 0);
     width: 31px;
     height: 32px;
     border-radius: 7px;
@@ -66,17 +72,11 @@ header {
 }
 
 .logo__txt {
-    border: 5px solid rgb(238, 255, 0);
     width: auto;
     height: 31px;
 }
 
-/* Navbar */
 .header__navbar {
-    border: 5px solid rgb(132, 0, 255);
-    /* max-width: 650px;
-    width: 100%;
-    min-height: 28px; */
     display: flex;
     flex: 1 1 350px;
     max-width: 698px;
@@ -85,31 +85,24 @@ header {
 }
 
 .header__list {
-    border: 5px solid rgb(255, 0, 157);
     font-size: 14px;
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: nowrap;
 }
 
 .header__item {
-    border: 5px solid rgb(255, 0, 157);
     display: flex;
     justify-content: center;
 }
 
-.header__link {
-    border: 5px solid rgb(255, 0, 157);
-    
-}
-
-/* Button */
 .actions {
-    border: 5px solid rgb(0, 115, 255);
     display: flex;
     justify-content: flex-end;
     gap: 15px;
-    margin-left: 15px
+    margin-left: 15px;
+    flex-wrap: nowrap;
 }
 
 .btn {
@@ -124,15 +117,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
+.btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
 .btn.btn--signIn {
-    border: 5px solid rgb(0, 0, 255);
     background-color: transparent;
     border: transparent    
 }
 .btn.btn--signUp {
-    border: 5px solid rgb(0, 0, 255);
     background-color: #FF9900;
     color:#FFFFFF;
 }
@@ -144,9 +141,7 @@ header {
 }
 
 /* === Section 1 === */
-/* figma #02 header */
 .block-one {
-    border: 5px solid rgb(190, 129, 8);
     display: flex;
     max-width: 1126px;
     width: 100%;
@@ -155,21 +150,23 @@ header {
     align-items: center;
 }
 
-/* figma #02 left side */
 .block-one__content {
-    border: 5px solid rgb(255, 221, 0);
-}
-
-/* <!-- figma #02 text --> */
-.main-title.main-title--block-two{
-    border: 5px solid rgb(132, 0, 255);
     max-width: 518px;
     width: 100%;
-    min-height: 108px;
+    height: auto;
+}
+
+.main-title {
     font-weight: bold;
     font-size: 44px;
     line-height: 54px;
     color: #2F281E;
+}
+
+.main-title.main-title--block-two{
+    max-width: 518px;
+    width: 100%;
+    min-height: 108px;
 }
 
 .block-one__text {
@@ -191,7 +188,6 @@ header {
 }
 
 .btn.btn--started {
-    border: 5px solid rgb(0, 0, 255);
     background-color: #FF9900;
     color: #FFFFFF;
     width: 175px;
@@ -206,23 +202,20 @@ header {
 }
 
 .btn.btn--video {
-    border: 5px solid rgb(0, 0, 255);
     background-color: transparent;
     color: #FF9900;
     width: 135px;
     height: 24px;
 }
 
-/* Image */
 .block-one__img {
-    border: 5px solid rgb(255, 0, 157);
-    max-width: 605px;
-    width: 100%;
-    min-height: 496px ;
+    width: clamp(0px, 60vw - 250px, 605px);
+    height: auto;
+    transition: opacity 0.3 s ease;
+    display: block;
 } 
 
 /* === Section 2 === */
-/* figma #03 / Feature */
 .main-title {
     font-size: 36px;
     font-weight: bold;
@@ -231,7 +224,6 @@ header {
 }
 
 .block-two {
-    border: 5px solid rgb(255, 136, 0);
     max-width: 1126px;
     width: 100%;
     min-height: 543px;
@@ -244,7 +236,6 @@ header {
 }
 
 .main-title.main-title--block-two {
-    border: 5px solid rgb(132, 0, 255);
     max-width: 600px;
     width: 100%;
     min-height: 108px;
@@ -254,8 +245,6 @@ header {
     flex-wrap: wrap;
 }
 
-
-/* Cards */
 .h3-title {
     font-weight: 600;
     font-size: 22px;
@@ -264,15 +253,13 @@ header {
 }
 
 .block-two__cards {
-    border: 5px solid rgb(190, 129, 8);
     max-width: 1142px;
     width: 100%;
     min-height: 204px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 45px;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -285,7 +272,6 @@ header {
 }
 
 .card__icon {
-    border: 2px solid #52be57;
     width: 50px;
     height: 50px;
     margin-bottom: 15px;
@@ -302,11 +288,6 @@ header {
     min-height: 98px;
     margin: 0;
 }
-/* Card 1 */
-/* figma #03 card/1 */
-.card__icon.card--left {
-    border: 5px solid #7752BE;
-}
 
 .card__img {
     width: 18px;
@@ -318,12 +299,6 @@ header {
     box-shadow: 0 10px 20px #7752BE;
 }
 
-/* Card 2 */
-/* figma #03 card/3 */
-.card.card--center-a {
-    border: 5px solid #FAB005;
-}
-
 .card__img {
     width: 18px;
     height: auto;
@@ -332,13 +307,6 @@ header {
 .card__icon.card__icon--gold {
     background-color: #FAB005;
     box-shadow: 0 10px 20px #FAB005;
-
-}
-
-/* Card 3 */
-/* figma #03 card/4 */
-.card.card--center-b {
-    border: 5px solid #F03E3D;
 }
 
 .card__img {
@@ -351,12 +319,6 @@ header {
     box-shadow: 0 10px 20px #F03E3D;
 }
 
-/* Card 4  */
-/* figma #03 card/4 */
-.card.card--right {
-    border: 5px solid #4DADF7;
-}
-
 .card__img {
     width: 14px;
     height: auto;
@@ -367,7 +329,6 @@ header {
     box-shadow: 0 10px 20px #4DADF7;
 }
 
-/* Button */
 .btn.btn--now {
     width: 175px;
     height: 53px;
@@ -376,9 +337,7 @@ header {
 }
 
 /* === Section 3 === */
-/* figma #04 effortless validation */
 .block-three {
-    border: 5px solid rgb(66, 190, 8);
     max-width: 1110px;
     width: 100%;
     min-height: 574px; 
@@ -389,22 +348,22 @@ header {
 }
 
 .block-three__content {
-    border: 5px solid rgb(190, 129, 8);
+    min-width: 484px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
     gap: 3px;
 }
 
 .block-three__layout {
-    border: 5px solid rgb(66, 190, 8);
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 .block-three__text {
-    border: 5px solid #ffdd00;
     max-width: 486px;
     width: 100%;
     min-height: auto;
@@ -424,104 +383,73 @@ header {
 }
 
 .main-title.main-title--block-three {
-    border: 5px solid #8400FF;
     padding-bottom: 20px;
     max-width: 400px;
     width: 100%;
     min-height: 54px;
 }
 
-/* Card 1 */
-/* figma #04 / #03 */
 .block-three__text {
-    border: 5px solid #ffdd00;
     margin: 0;
 }
 
-.block-three__text.block-three__text-a {
-   line-height: auto; 
-}
-
-.block-three__layout.block-three__layout--top {
-    border: 5px solid #ffdd00;
-}
-
-/* Card 2 */
-/* figma #04 / #02 */
-.block-three__layout.block-three__layout--center {
-    border: 5px solid #F03E3D;
-}
-
-.block-three__layout.block-three__layout--btm {
-    border: 5px solid #4DADF7;
-}
-
-/* figma #04 / image */
 .block-three__img {
-    border: 5px solid  #FF009D;
-    max-width: 520px;
-    width: 100%;
-    min-height: 574px;
+    width: clamp(0px, 60vw - 250px, 520px);
+    height: auto;
+    transition: opacity 0.4 s ease;
+    display: block;
 }
 
 /* === Section 4 === */
-/* figma #05 product managers */
 .block-four {
-    border: 5px solid rgb(66, 190, 8);
     max-width: 1121px;
     width: 100%;
     /* min-height: 521px;  */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 104px;
+    gap: 100px;
 }
 
 .block-four__img {
-    border: 5px solid  #FF009D;
-    max-width: 533px;
-    width: 100%;
-    min-height: 520px;
+    width: clamp(0px, 60vw - 250px, 532px);
+    height: auto;
+    transition: opacity 0.4 s ease;
+    display: block;
 }
-/* figma #05 / text */
+
 .block-four__content {
-    border: 5px solid rgb(190, 129, 8);
+    max-width: 486px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     gap: 3px;
 }
 
-.block-four__text {
-    border: 5px solid #ffdd00;
-    max-width: 375px;
-    width: 100%;
-    min-height: auto;
-    margin: 0;
-}
-
 .block-four__layout {
-    border: 5px solid #ff0d00;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
 }
 
+.block-four__text {
+    max-width: 375px;
+    width: 100%;
+    min-height: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .main-title.main-title--block-four {
-    border: 5px solid #6a00ff;
     max-width: 400px;
     width: 100%;
     min-height: 54px;
     padding-bottom: 20px;
 }
-
-/* .block-four.block-four__layout {
-    border: 5px solid rgb(66, 190, 8);
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-} */
 
 .block-four.block-four__tick-box {
     width: 35px;
@@ -538,11 +466,21 @@ header {
     height: 12px;
 }
 
+.block-four__layout.block-four__layout--a {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.block-four__layout.block-four__layout--b {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.block-four__layout.block-four__layout--c {
+    display: flex;
+    flex-wrap: nowrap; 
+}
 
 /* === Section 5 === */
-/* figma #06 / marketers */
 .block-five {
-    border: 5px solid rgb(66, 190, 8);
     max-width: 1110px;
     width: 100%;
     min-height: 574px; 
@@ -553,7 +491,6 @@ header {
 }
 
 .block-five__content {
-    border: 5px solid rgb(190, 129, 8);
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -561,14 +498,12 @@ header {
 }
 
 .block-five__layout {
-    border: 5px solid rgb(66, 190, 8);
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
 .block-five__text {
-    border: 5px solid #ffdd00;
     max-width: 486px;
     width: 100%;
     min-height: auto;
@@ -580,17 +515,13 @@ header {
 }
 
 .main-title.main-title--block-five {
-    border: 5px solid #8400FF;
     padding-bottom: 20px;
     max-width: 400px;
     width: 100%;
     min-height: 54px;
 }
 
-/* Card 1 */
-/* figma #04 / #03 */
 .block-five__text {
-    border: 5px solid #ffdd00;
     margin: 0;
 }
 
@@ -598,68 +529,73 @@ header {
    line-height: auto; 
 }
 
-.block-five__layout.block-five__layout--top {
-    border: 5px solid #ffdd00;
-}
-
-/* Card 2 */
-/* figma #04 / #02 */
-.block-five__layout.block-five__layout--center {
-    border: 5px solid #F03E3D;
-}
-
-.block-five__layout.block-five__layout--btm {
-    border: 5px solid #4DADF7;
-}
-
-/* figma #04 / image */
 .block-five__img {
-    border: 5px solid  #FF009D;
-    max-width: 520px;
-    width: 100%;
-    min-height: 574px;
+    width: clamp(0px, 60vw - 250px, 542px);
+    height: auto;
+    transition: opacity 0.4 s ease;
+    display: block;
 }
 
 /* === Footer === */
-/* figma #09 / footer */
 footer {
-    max-width: 1109px;
+    max-width: 1121px;
     width: 100%;
     min-height: 308px;
     display: flex;
+    align-items: last baseline;
 }
 
-/* Block logo */
 .logo {
-    border: 5px solid  #FF009D;
+    max-width: 185px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-self: flex-start;
 }
 
-/* Sign up panel */
-/* figma #09 / #03 */
-.footer__input {}
+.footer__nav {
+    max-width: 785px;
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: last baseline;
+}
+
+.signup {
+    max-width: 325px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: last baseline;
+    gap: 21px;
+}
+
+.signup__box {
+    max-width: 325px;
+    width: 100%;
+    min-height: 48px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #BCD0E5;
+}
+
+.signup__input {
+    width: 182px;
+    height: 28px;
+    background-color: #BCD0E5;
+    border: none;
+}
 
 .btn.btn--now {
     width: 131px;
     height: 39px;
 }
 
-.footer__nav.footer__nav--social {
-    border: 5px solid  #FF009D;
-    width: 118px;
-    height: 200px;
-}
-
-.footer__nav.footer__nav--legal {
-    border: 5px solid  #FF009D;
-    width: 131px;
-    height: 200px;
-}
-
-/* Legal links */
-/* figma #09 / legal stuff */
-
 .footer__list {
     list-style: none;
-    font-size: 16px;
     line-height: 35px;
 }
